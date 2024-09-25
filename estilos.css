@@ -176,53 +176,64 @@ html {
     margin: 8px 0;
 }
 
-/* SECCION HABILIDADES */
-.habilidades{
-    padding: 80px 0 100px 0;
+/* Sección de habilidades */
+#skills {
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0.3)),
-    url("/pexels-nao-triponez-129208.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #940253, #feb47b);
+  }
+  
+  #skills h2 {
     color: #fff;
-}
-
-.habilidades .contenido-seccion{
-    max-width: 1000px;
-    margin: auto;
-    padding: 0 10px;
-}
-.habilidades .contenido-seccion h3{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
     text-transform: uppercase;
-    font-size: 30px;
-}
-.habilidades .contenido-seccion .fila {
+    letter-spacing: 2px;
+  }
+  
+  .skills-container {
     display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-.habilidades .contenido-seccion .fila .col{
-    width: 47%;
-    text-align: left;
-}
-.habilidades.contenido-seccion .fila .col .cont-barra{
-    display: flex;
-    align-items: center;
-}
-.habilidades .contenido-seccion .barra{
-    display: flex;
-    border: 1px solid #940253;
-    padding: 2px;
-    border-radius: 3px;
-    margin-right: 10px;
-}
-.habilidades .contenido-seccion .barra .e{
-    background-color: #363636;
-    width: 45px;
-    height: 20px;
-    margin-right: 2px;
-}
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .skill {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill:hover {
+    transform: translateY(-10px);
+  }
+  
+  .skill i {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #ff7e5f;
+  }
+  
+  .skill h3 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .skill p {
+    color: #777;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 /* SECCION RESUMEN */
 .resumen{
